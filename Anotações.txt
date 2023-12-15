@@ -1,0 +1,68 @@
+FOCO!!!!
+
+variáveis:
+tipos de variáveis:
+var -
+let - 
+const -
+
+convertendo para inteiro -> parseInt(n)
+convertendo para float (número com vírgula) -> parseFloat(n)
+quando pode ser qualquer um dos tipos acima, use apenas -> Number(n)
+convertendo para string -> String(n)
+
+mostrando variáveis (dois tipos):
+msg = "javascript"
+text = "Eu curto " + msg || `Eu curto ${msg}`
+
+alert - manda uma mensagem na caixa
+confirm - confirmação em ok ou cancel na caixa
+prompt - faz uma pergunta na caixa
+document.write - escreve na tela
+
+formatando strings:
+text.length - tamanho do texto
+text.toUpperCase() - texto para letra maiúscula
+text.toLowerCase() - texto para letra minúscula
+
+formatando números:
+num.toFixed(num) - quantas casas após a vírgula
+num.replace(".", ",") - transforma todos os pontos em vírgula
+num.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}) - transforma o número em dinheiro de acordo com o país selecionado
+
+operadores:
+
+aritméticos:
++ - adição
+- - subtração
+* - multiplicação
+/ - divisão
+% - resto da divisão
+** - potência
+
+atribuição:
++=
+-=
+*=
+/=
+%=
+**=
+
+relacionais:
+> = - maior que
+< = - menor que 
+>= - maior ou igual que 
+<= - menor ou igual que 
+== - igual a
+!= - diferente de
+
+identidade:
+5 == 5 - true (igual)
+5 == "5" - true (igual)
+5 === "5" - false (idênticos)
+
+lógicos:
+! - negação
+&& - conjunção (e)
+|| - disjunção (ou)
+ordem: 1° não - 2° e - 3° ou
