@@ -67,6 +67,8 @@ lógicos:
 || - disjunção (ou)
 ordem: 1° não - 2° e - 3° ou
 
+dom - Document Object Model
+
 selecionando objetos:
 document.getElementsByTagName() - por nome
 document.getElementById() - por id
@@ -76,3 +78,20 @@ document.querySelector(use . para class e # para id)
 
 innerText - texto dentro do objeto
 innerHTML - texto e tags dentro do objeto (html inteiro)
+
+eventos com mouse:
+mouseenter - quando o mouse entra no objeto
+mouseout - quando o mouse sai do objeto
+mousemove - quando se move no objeto
+mousedown - quando clica no objeto
+mouseup - quando clica e solta o click no objeto
+click - clique inteiro
+
+eventos por javascript:
+normal:
+area.addEventListener("click", clicar);
+com função:
+
+hora atual do sistema:
+var time = new Date()
+time.getHours() - horas
