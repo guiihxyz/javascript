@@ -66,3 +66,13 @@ lógicos:
 && - conjunção (e)
 || - disjunção (ou)
 ordem: 1° não - 2° e - 3° ou
+
+selecionando objetos:
+document.getElementsByTagName() - por nome
+document.getElementById() - por id
+document.getElementsByName() - por nome
+document.getElementsByClassName() - por classe
+document.querySelector(use . para class e # para id)
+
+innerText - texto dentro do objeto
+innerHTML - texto e tags dentro do objeto (html inteiro)
