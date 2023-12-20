@@ -99,3 +99,28 @@ time.getHours() - horas
 var tag = document.createElement("tag") - cria um elemento por javascript
 tag.setAttribute("src/name/id/class", "valor") - seta um atributo na tag criada
 div.appendChild(tag) - seta a tag em alguma tag do html
+
+arrays:
+
+array vetor -> índice chave -> elemento -> conteúdo valor
+num[0] = 2 - cria um valor em um certo índice
+num.push(2) - adiciona o valor no fim do array
+num.length - comprimento do array (sem parêntese)
+num.sort() - coloca todos os elementos em ordem crescente
+num.indexOf(2) - retorna o índice que está o número selecionado (caso não ter retornará -1)
+
+printar um número sem os colchetes e vírgula:
+for(let i = 0; i <= num.length; i++) {
+    console.log(num[i])
+}
+ou
+for(let i in num) {
+    console.log(num[i])
+}
+
+caso um valor não for passado em um função:
+function soma(n1 = 0, n2 = 0) {
+    return n1 + n2
+}
+
+console.log(soma(2))
