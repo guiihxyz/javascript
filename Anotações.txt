@@ -126,3 +126,62 @@ function soma(n1 = 0, n2 = 0) {
 console.log(soma(2))
 
 num.focus() - foca no objeto como se tivesse clicado
+
+Jquery:
+
+pegar variáveis: $("elemento")
+
+funções:
+fadeIn() - fade do início
+fadeOut() - fade da saída
+slideUp() - faz um slide para cima
+slideDown() - faz um slide para baixo
+hide() - esconde o elemento
+show() - exibe o elemento
+empty() - esvazia o conteúdo dentro de algum elemento
+text() - modifica o texto no elemento
+html() - modifica o texto com html no elemento
+prepend() - adiciona um texto com html no elemento no início
+append() - adiciona um texto com html no elemento no fim
+val() - pega o valor
+ready() - ao estar pronto para uso
+click() - ao ser clicado
+addClass() - adiciona uma classe no elemento
+removeClass() - remove uma classe no elemento
+toggleClass() - altera a presença de uma classe no elemento
+attr() - obtém ou define um valor de um atributo
+remove() - remove o elemento
+submit() - ao submitar algo
+
+exemplo de estrutura:
+$("button").click(function() {
+    conteúdo
+})
+
+envio de formulário:
+$("#meuFormulario").submit(function(event) {
+    // Impede o envio padrão do formulário
+    event.preventDefault();
+
+    // Obtém os dados do formulário
+    var formData = $(this).serialize();
+
+    // Envia os dados via AJAX
+    $.ajax({
+        type: "POST", // Método de envio
+        url: "seu_script_no_servidor.php", // URL do script no servidor
+        data: formData, // Dados a serem enviados
+        success: function(response) {
+            // Ações a serem executadas em caso de sucesso
+            console.log("Resposta do servidor:", response);
+        },
+        error: function(error) {
+            // Ações a serem executadas em caso de erro
+            console.error("Erro:", error);
+        }
+    });
+});
+
+O evento submit do formulário é interceptado.
+Os dados do formulário são serializados usando $(this).serialize().
+Em seguida, é feita uma chamada AJAX usando $.ajax(), onde você define o método (type: "POST"), a URL do script no servidor (url: "seu_script_no_servidor.php"), os dados a serem enviados (data: formData), e as ações a serem executadas em caso de sucesso (success) ou erro (error).
